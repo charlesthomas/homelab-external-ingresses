@@ -1,0 +1,13 @@
+---
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: external-ingresses
+
+commonAnnotations:
+  repo: https://github.com/charlesthomas/homelab-external-ingresses
+
+resources:
+- resources/namespaces.yaml
+- resources/nas01.yaml
+- resources/pihole2.yaml
+- resources/syncthing.yaml

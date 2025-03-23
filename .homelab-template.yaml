@@ -1,0 +1,17 @@
+_commit: v1.12.1-9-g5863ce6
+_src_path: /Users/crthomas/code/charlesthomas/homelab-template
+additionalResources: nas01.yaml,pihole2.yaml,syncthing.yaml
+backups: false
+helm: false
+homepageEnabled: false
+ingress: false
+labels: ''
+name: external-ingresses
+namespace: external-ingresses
+pvc: false
+reloader: false
+resources: []
+service: false
+serviceAccount: false
+upstreamURL: ''
+url: https://github.com/charlesthomas/homelab-external-ingresses
