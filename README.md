@@ -6,6 +6,14 @@ in [my homelab](https://github.com/charlesthomas/homelab).
 
 These "external ingresses" are used to point the k3s ingress controller to services running outside the cluster. It enables external-dns and cert-manager to do everything automatically, and have https on services that would otherwise not have it at all, or would use a self-signed cert.
 
+## Adding a new cluster-external ingress
+
+### With HTTPS annotation
+./bin/new-external-ingress.bash -n NAME -p PORT
+
+### Without HTTPS annotation
+./bin/new-external-ingress.bash -n NAME -p PORT -s
+
 ---
 This repo is templated via
 [homelab-template](https://github.com/charlesthomas/homelab-template)
