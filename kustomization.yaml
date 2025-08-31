@@ -9,5 +9,4 @@ commonAnnotations:
 resources:
 - resources/namespaces.yaml
 - resources/nas01.yaml
-- resources/pihole2.yaml
 - resources/syncthing.yaml
