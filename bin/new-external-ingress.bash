@@ -46,3 +46,4 @@ if [ $HTTPS -eq 0 ]; then
 fi
 
 eval $CMD > resources/$NAME.yaml
+echo you need to update kustomization and .homelab-template yamls manually!
