@@ -6,7 +6,7 @@ metadata:
   namespace: external-ingresses
 spec:
   type: ExternalName
-  externalName: 192.168.1.1
+  externalName: router.local
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
