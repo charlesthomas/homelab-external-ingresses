@@ -9,6 +9,7 @@ commonAnnotations:
 resources:
 - resources/namespaces.yaml
 - resources/nas01.yaml
+- resources/pihole2.yaml
 - resources/poe.yaml
 - resources/router.yaml
 - resources/syncthing.yaml

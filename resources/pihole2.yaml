@@ -1,0 +1,39 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pihole2
+  namespace: external-ingresses
+spec:
+  type: ExternalName
+  externalName: pi5.local
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: pihole2
+  namespace: external-ingresses
+  annotations:
+    external-dns.alpha.kubernetes.io/hostname: pihole2.crt.house
+    gethomepage.dev/description: Ad Blocker Backup
+    gethomepage.dev/enabled: "true"
+    gethomepage.dev/group: Pi-hole
+    gethomepage.dev/href: https://pihole2.crt.house/admin
+    gethomepage.dev/icon: pi-hole
+    gethomepage.dev/name: Pi-hole2
+spec:
+  ingressClassName: nginx-internal
+  rules:
+  - host: pihole2.crt.house
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: pihole2
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - pihole2.crt.house
