@@ -21,6 +21,7 @@ metadata:
     gethomepage.dev/href: https://pihole2.crt.house/admin
     gethomepage.dev/icon: pi-hole
     gethomepage.dev/name: Pi-hole2
+    gethomepage.dev/healthcheck: "false"
 spec:
   ingressClassName: nginx-internal
   rules:
