@@ -2,6 +2,7 @@ _commit: v1.12.1-12-g09a8ce4
 _src_path: /Users/crthomas/code/charlesthomas/homelab-template
 additionalResources: nas01.yaml,pihole2.yaml,router.yaml,syncthing.yaml
 backups: false
+grafanaDashboard: false
 helm: false
 homepageEnabled: false
 ingress: false
